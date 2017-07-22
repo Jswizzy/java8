@@ -21,7 +21,7 @@ public class CollectorsExample {
                 BufferedReader reader =
                 new BufferedReader(
                     new InputStreamReader(
-                        CollectorsExample.class.getResourceAsStream("/people.txt")));
+                        CollectorsExample.class.getResourceAsStream("/peopleStream.txt")));
 
                 Stream<String> stream = reader.lines()
         ) {

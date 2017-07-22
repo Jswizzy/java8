@@ -1,18 +1,8 @@
-Sarah 15
-Philip 21
-Beth 23 
-Simon 24
-Nina 23
-Allan 28
-Leonard 18
-Barbara 26
-Penelope 18
-Albert 31 
-Lucy 42
-Charles 26
-Ella 24
-Louis 32
-Liza 17
-Franck 18
-Amy 26
-Nathan 33
+Sarah 1999 12 15
+Philip 1993 8 12
+Beth 1991 6 5
+Simon 1990 3 23
+Nina 1991 7 12
+Allan 1985 2 14
+Leonard 1996 10 27
+Barbara 1988 4 19
