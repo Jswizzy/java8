@@ -1,8 +1,6 @@
-Sarah 1999 12 15
-Philip 1993 8 12
-Beth 1991 6 5
-Simon 1990 3 23
-Nina 1991 7 12
-Allan 1985 2 14
-Leonard 1996 10 27
-Barbara 1988 4 19
+Sarah 15 F
+Bob 15 M
+John 15 M
+Philip 21 M
+Beth 23 F
+Simon 24 M

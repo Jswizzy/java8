@@ -22,7 +22,7 @@ public class DataAndTime {
                 BufferedReader reader =
                 new BufferedReader(
                     new InputStreamReader(
-                        DataAndTime.class.getResourceAsStream("/people.txt")));
+                        DataAndTime.class.getResourceAsStream("/peopleDates.txt")));
                 Stream<String> stream = reader.lines();
         ) {
             
