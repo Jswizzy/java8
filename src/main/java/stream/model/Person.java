@@ -2,15 +2,13 @@ package stream.model;
 
 public class Person {
 
-    private final String lastName;
     private String name;
     
     private int age;
 
-    public Person(String name, int age, String lastName) {
+    public Person(String name, int age) {
         this.name = name;
         this.age = age;
-        this.lastName = lastName;
     }
     
     public String getName() {
@@ -23,9 +21,5 @@ public class Person {
     
     public String toString() {
         return "Person [" + this.name + ", " + this.age + "]";
-    }
-
-    public String getLastName() {
-        return lastName;
     }
 }

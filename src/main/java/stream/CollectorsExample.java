@@ -9,12 +9,10 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-
-
 public class CollectorsExample {
 
     public static void main(String... args)  {
-        
+
         List<Person> persons = new ArrayList<>();
 
         try (
@@ -28,7 +26,7 @@ public class CollectorsExample {
 
             stream.map(line -> {
                 String[] s = line.split(" ");
-                Person p = new Person(s[0].trim(), Integer.parseInt(s[1]), lastName);
+                Person p = new Person(s[0].trim(), Integer.parseInt(s[1]));
                 persons.add(p);
                 return p;
                     })
@@ -38,21 +36,21 @@ public class CollectorsExample {
         } catch (IOException ioe) {
             System.out.println(ioe);
         }
-        
-        Optional<Person> opt = 
+
+        Optional<Person> opt =
         persons.stream().filter(p -> p.getAge() >= 20)
                 .min(Comparator.comparing(Person::getAge));
         System.out.println(opt);
-        
-        Optional<Person> opt2 = 
+
+        Optional<Person> opt2 =
         persons.stream().max(Comparator.comparing(Person::getAge));
         System.out.println(opt2);
-        
+
         Map<Integer, Set<String>> map =
         persons.stream()
                 .collect(
                         Collectors.groupingBy(
-                                Person::getAge, 
+                                Person::getAge,
                                 Collectors.mapping(
                                         Person::getName,
                                         Collectors.toCollection(TreeSet::new)
