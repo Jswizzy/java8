@@ -28,7 +28,7 @@ public class CollectorsExample {
 
             stream.map(line -> {
                 String[] s = line.split(" ");
-                Person p = new Person(s[0].trim(), Integer.parseInt(s[1]));
+                Person p = new Person(s[0].trim(), Integer.parseInt(s[1]), lastName);
                 persons.add(p);
                 return p;
                     })
